@@ -24,8 +24,8 @@ const IndexPage = ({apps, aboutmes,project} : HomePageProps) => {
       <Layout>
         
           <Hero apps={apps}/>
-          <About aboutmes = {aboutmes}/>
-          <Projects project = {project}/>
+          {/* <About aboutmes = {aboutmes}/>
+          <Projects project = {project}/> */}
       </Layout>
 
   )
