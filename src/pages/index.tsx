@@ -22,9 +22,10 @@ const IndexPage = ({apps, aboutmes,project} : HomePageProps) => {
   return (
   
       <Layout>
+        salom
         
-          <Hero apps={apps}/>
-          {/* <About aboutmes = {aboutmes}/>
+          {/* <Hero apps={apps}/>
+          <About aboutmes = {aboutmes}/>
           <Projects project = {project}/> */}
       </Layout>
 
