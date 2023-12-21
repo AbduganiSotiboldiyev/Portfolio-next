@@ -1,4 +1,5 @@
 import { AboutMe } from "@/interface/aboutme.interface";
+import { AboutPage } from "@/interface/aboutpage.interface";
 import { Contacts } from "@/interface/contact.interface";
 import { PortfolioType } from "@/interface/portfolio.interface";
 import { Project } from "@/interface/projects.interface";
@@ -42,10 +43,10 @@ export const PortfolioServece = {
                     avatar {
                         url
                     }
-                    aboutInfo {
-                        text
-                        html
+                     aboutInfo {
+                    text
                     }
+                   
                 }
                 }
         `;
@@ -115,6 +116,26 @@ export const PortfolioServece = {
         `;
         const result = await request<{contacts : Contacts[] }>(graphqlAPI, query)
         return result.contacts;
+     },
+
+     async getDetailedAbout(name : string) {
+        const query = gql` 
+            query AboutPage ($name: String!) {
+                aboutmes(where: {name: "$name"}) {
+                    id
+                    name
+                    description
+                    avatar {
+                    url
+                    }
+                    aboutInfo {
+                    text
+                    }
+                }
+                }
+        `;
+        const result = await request<{aboutmes :AboutPage[]}>(graphqlAPI, query, {name})
+        return result.aboutmes
      }
 
 

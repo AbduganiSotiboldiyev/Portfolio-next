@@ -27,6 +27,7 @@ export default DetailedProject
 
 export const getServerSideProps: GetServerSideProps<DetailedProjectPageProps> = async ({query}) => {
   const projects = await PortfolioServece.getDetailedProject(query.project as string);
+  
   return{
     props : {
       projects

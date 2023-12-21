@@ -1,7 +1,8 @@
 import React from 'react'
 import {Box,Typography} from "@mui/material"
-import { AboutPageProps } from '../../interface/aboutpage.interface'
+
 import Image1 from 'next/legacy/image'
+import { AboutPageProps } from './aboutPage.interface'
 const About = ({aboutmes} : AboutPageProps) => {
   return (
     <Box width={"100%"}>
@@ -25,7 +26,10 @@ const About = ({aboutmes} : AboutPageProps) => {
                                 </Box>
                                 <Box mt={10}  textAlign={"start"}>
                                     <Typography sx={{fontSize : {xs : "12px", sm:"16px", md:"20px"}}} width={{xs:"100%"}}>
+                                        
+
                                         <span dangerouslySetInnerHTML = {{__html : item.aboutInfo.html}}></span>  
+                                        
 
                                     </Typography>
                                 </Box>

@@ -1,5 +1,11 @@
-import { AboutMe } from "@/interface/aboutme.interface";
-
-export interface AboutPageProps {
-    aboutmes : AboutMe[]
+export interface AboutPage {
+     id : string;
+    name : string;
+    description : string;
+    avatar : {
+    url : string;
+    }
+    aboutInfo :{
+    text : string;
+    }
 }
