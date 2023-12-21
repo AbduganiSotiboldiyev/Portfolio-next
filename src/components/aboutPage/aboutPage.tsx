@@ -4,6 +4,7 @@ import {Box,Typography} from "@mui/material"
 import Image1 from 'next/legacy/image'
 import { AboutPageProps } from './aboutPage.interface'
 const About = ({aboutmes} : AboutPageProps) => {
+    console.log(aboutmes)
   return (
     <Box width={"100%"}>
         <Box width={{xs: "90%",sm:"80%",md:"70%",lg:"60%"}} marginX={"auto"} sx={{textAlign:"center", marginTop: "50px"}}>

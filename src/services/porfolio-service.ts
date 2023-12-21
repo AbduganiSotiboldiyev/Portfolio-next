@@ -44,7 +44,7 @@ export const PortfolioServece = {
                         url
                     }
                      aboutInfo {
-                    text
+                    html
                     }
                    
                 }
@@ -118,25 +118,6 @@ export const PortfolioServece = {
         return result.contacts;
      },
 
-     async getDetailedAbout(name : string) {
-        const query = gql` 
-            query AboutPage ($name: String!) {
-                aboutmes(where: {name: "$name"}) {
-                    id
-                    name
-                    description
-                    avatar {
-                    url
-                    }
-                    aboutInfo {
-                    text
-                    }
-                }
-                }
-        `;
-        const result = await request<{aboutmes :AboutPage[]}>(graphqlAPI, query, {name})
-        return result.aboutmes
-     }
 
 
 
