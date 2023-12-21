@@ -1,6 +1,6 @@
 import Layout from '@/layout/layout'
 import React from 'react'
-import About from './about'
+import About from './[about]'
 import { GetServerSideProps } from 'next'
 import { PortfolioServece } from '@/services/porfolio-service'
 import { AboutMe } from '@/interface/aboutme.interface'
