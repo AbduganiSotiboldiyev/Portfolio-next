@@ -8,7 +8,7 @@ const Projects = ({project} : ProjectProps) => {
     const router = useRouter()
   return (
     <Box width={"100%"} height={"70vh"}>
-        <Box width={{xs:"90%", lg:"60%"}} marginX={"auto"}>
+        <Box width={{xs:"90%",lg:"60%"}} marginX={"auto"}>
             <Typography  sx={{textAlign:"center",fontWeight:{xs : "200", lg:"400"}, fontSize : {xs : "32px", sm :"40px", md :"60px", lg : "72px"}}} mb={5}> Recent Projects  </Typography>
             <Box width={"100%"} sx={{display: "flex" ,justifyContent: "space-between", alignItems:"center",flexWrap:"wrap"}}>
                 <>

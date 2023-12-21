@@ -13,7 +13,7 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .project_img {
     width: 20vh;
   }
@@ -32,4 +32,10 @@
     height: 25vh;
     width: 75vw
   }
+}
+
+@media screen and (min-width: 1600px) {
+  .project_img {
+      width: 30vh;
+    }
 }
