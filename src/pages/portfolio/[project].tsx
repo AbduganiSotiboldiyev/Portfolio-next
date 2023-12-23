@@ -5,7 +5,7 @@ import { PortfolioServece } from '@/services/porfolio-service'
 import { Project } from '@/interface/projects.interface'
 import Layout from '@/layout/layout'
 import { DetailedPage } from '@/components'
-// import SEO from '@/layout/seo/seo'
+import SEO from '@/layout/seo/seo'
 import { useRouter } from 'next/router'
  
 const DetailedProject = ({projects} : DetailedProjectPageProps) => {
@@ -13,12 +13,12 @@ const DetailedProject = ({projects} : DetailedProjectPageProps) => {
   
   
   return (
-    // <SEO metaTitle={`${router.query.project} project`}>
+    <SEO metaTitle={`${router.query.project} project`}>
     <Layout>
       <DetailedPage projects = {projects}/>
     </Layout>
 
-    // {/* </SEO> */}
+     </SEO> 
   )
 }
 

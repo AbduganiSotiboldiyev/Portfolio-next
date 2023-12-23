@@ -5,16 +5,16 @@ import { GetServerSideProps } from 'next'
 import { PortfolioServece } from '@/services/porfolio-service'
 import { Contacts } from '@/interface/contact.interface'
 import Contact from '../../components/contactPage/contactPage'
-// import SEO from '@/layout/seo/seo'
+import SEO from '@/layout/seo/seo'
 
 const ContactPage = ({contact} : GetContactProps) => {
   return (
-    // <SEO metaTitle='Contact'>
+    <SEO metaTitle='Contact'>
     <Layout>
         <Contact contact={contact}/>
     </Layout>
 
-    // {/* </SEO> */}
+    </SEO> 
   )
 }
 

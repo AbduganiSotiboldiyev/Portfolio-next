@@ -19,6 +19,7 @@ import { Project } from '@/interface/projects.interface'
 
 
 import Layout from '@/layout/layout'
+import SEO from '@/layout/seo/seo'
 // import SEO from '@/layout/seo/seo'
 import { PortfolioServece } from '@/services/porfolio-service'
 import { Box } from '@mui/material'
@@ -32,13 +33,15 @@ const IndexPage = ({apps, aboutmes,project} : HomePageProps) => {
   
 
   return (
-    
+    <SEO>
       <Layout>
         
           <Hero apps={apps}/>
           <About aboutmes = {aboutmes}/>
           <Projects project = {project}/>
       </Layout>
+    </SEO>
+    
 
   
   )

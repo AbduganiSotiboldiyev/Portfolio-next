@@ -4,12 +4,16 @@ import About from '../../components/aboutPage/aboutPage'
 import { GetServerSideProps } from 'next'
 import { PortfolioServece } from '@/services/porfolio-service'
 import { AboutMe } from '@/interface/aboutme.interface'
+import SEO from '@/layout/seo/seo'
 
 const AboutPage = ({aboutmes} : AboutPagePropsBlog) => {
   return (
-    <Layout>
-      <About aboutmes={aboutmes}/>
-    </Layout>
+    <SEO metaTitle='About Me'>
+      <Layout>
+        <About aboutmes={aboutmes}/>
+      </Layout>
+
+    </SEO>
   )
 }
 
