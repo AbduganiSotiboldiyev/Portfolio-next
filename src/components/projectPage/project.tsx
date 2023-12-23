@@ -19,12 +19,12 @@ const Projects = ({project} : ProjectPageProps) => {
   const router = useRouter()
   return (
     <Box className="project_container" >
-      <Box sx={{height: {xs:"60vh",lg: "120vh"}}} >
+      <Box sx={{height: {xs:"100vh",lg: "130vh"}}} >
           <Typography pt={4}  textAlign={"center"} sx={{ fontWeight:"500",fontSize:{xs :"28px",sm:"30px",md:"40px", lg:"60px" } }}> Projects </Typography>
            <Carousel responsive={responsive} >
             {project.map(item => (
               
-              <Box key={item.id} sx={{height: {xs:"60vh",lg: "120vh"}}}>
+              <Box key={item.id} sx={{height: {xs:"80vh",lg: "120vh"}}}>
                 <Button onClick={() => router.push(`${item.proAdress}`) } sx={{cursor :"pointer", display: "block", textAlign: "center", margin: "20px auto", fontSize:{xs:"20px", sm:"24px", md:"28px", lg:"32px"},letterSpacing:"14px"}}>{item.proName}</Button>
                 <Box  width={{xs:"75vw", lg:"36.5vw"}}  sx={{boxShadow: "8px 2px 18px 2px grey",borderRadius:"15px", margin : "0 auto"}}>
                   <Box>

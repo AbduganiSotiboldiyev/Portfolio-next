@@ -8,16 +8,16 @@ import { format } from 'date-fns';
 const Footer = () => {
  
   return (
-    <Box sx={{display : "flex", justifyContent: "space-around", alignItems: "center", backgroundColor: "#171d14", color: "white", height:"100px"}} padding={"20px"}>
-      <Box flexGrow={{lg:1, xs:0}}>
+    <Box  sx={{display : "flex", justifyContent: "space-between", alignItems: "center", backgroundColor: "#171d14", color: "white", height:"100px"}} padding={"20px"}>
+      <Box >
         <Typography sx={{fontSize:{xs:"16px", lg:"24px"}}} >
     
-          @{format(new Date(), "yyyy")} AbduPorfolio.
+          @{format(new Date(), "yyyy")} AbduPortfolio.
         </Typography>
       </Box>
      
       
-          <Box display={"flex"} sx={{justifyContent: "space-between", margin: "25px auto", cursor: "pointer"}} width={"8%"}  >
+          <Box display={"flex"} sx={{ cursor: "pointer"}} >
                 <IconButton >
                   <Link href= "https://t.me/A_SH_0108" target="_blank" underline='none' color={"white"}>
                     <TelegramIcon  sx={{transform : "1.2,1.2", transition: "all .5s ease"}}/>

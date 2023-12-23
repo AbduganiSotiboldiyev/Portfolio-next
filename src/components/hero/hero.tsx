@@ -22,7 +22,7 @@ const Hero = ({apps}: HeroProps) => {
             {apps.map(item => (
                 <Box  key={item.id} >
                     <Box position={"relative"} width={"100%"} height={"20vh"}>
-                         <Image src={item.image.url} alt='img' priority={true} fill />
+                         <Image src={item.image.url} alt='img' priority={true} fill  />
               
                         <Box sx={{position: "absolute", width: "100%", backgroundColor: "rgba(0,0,0,0.6)", top: "0", left : "0", right :"0", bottom: "0"}}>
                             <Box sx={{position: "relative",color: "white", top:"50%", transform: "translateY(-50%)", paddingLeft:{xs:"10px", md:"50px" }, width:"70vw"}}>
