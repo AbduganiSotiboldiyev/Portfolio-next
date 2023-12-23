@@ -41,7 +41,7 @@ const Navbar = ({window} : Props) => {
         <Box sx={{display: "flex", justifyContent:"start", alignItems: "center"}}>
           <QrCode2TwoToneIcon/>
           <Typography variant="h6" sx={{ my: 2 }}>
-            AbduPorfolio
+            AbduPortfolio
           </Typography>
         </Box>
         <CloseIcon  onClick={handleDrawerToggle}/>
@@ -86,7 +86,7 @@ const Navbar = ({window} : Props) => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              AbduPorfolio
+              AbduPortfolio
             </Typography>
           </Box>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
