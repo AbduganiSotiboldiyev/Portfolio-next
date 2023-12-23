@@ -1,5 +1,5 @@
 export const SideConfig  ={
-    metaTitle : "AbduPortfoolio",
+    metaTitle : "AbduPortfolio",
     metaDescription : "All about my porfolio",
     metaKeywords : "portfolio",
     author : "Abdugani"

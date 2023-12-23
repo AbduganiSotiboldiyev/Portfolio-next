@@ -32,8 +32,6 @@ const Projects = ({project} : ProjectPageProps) => {
                   </Box>
                   <Box width={"50%"} textAlign={"center"} margin={"0 auto"}  mt={5}>
                             <Typography sx={{ fontWeight:"200",fontSize:{xs :"12px",sm:"14px",md:"18px", lg:"24px" } }} fontWeight={"500"} mb={5}>{item.proDescription.slice(0,50)}...  </Typography>
-                            <Typography sx={{ fontWeight:"200",fontSize:{xs :"10px",sm:"12px",md:"16px", lg:"20px" } }} color={"gray"} mb={5}>{item.information.text.slice(0,80)}... </Typography>
-                            <div dangerouslySetInnerHTML = {{__html : item.information.html}}></div>  
                             <Button onClick={() => router.push(`portfolio/${item.project}`)} sx={{mb:"10px"}}>Read More</Button>                   
                   </Box> 
                 </Box>
